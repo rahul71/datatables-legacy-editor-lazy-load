@@ -18,7 +18,6 @@
 		"lint:cicd": "ng lint --cache --quiet",
 		"lint:sonar": "ng lint --cache --format=json > lint-issues.json",
 		"ng": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng",
-		"postinstall": "node utils/copy-editor-to-node_modules.js",
 		"pretest": "npm run lint",
 		"rimraf": "rimraf",
 		"start": "npm run ng -- serve --host 0.0.0.0 --disable-host-check --configuration local --no-live-reload",
