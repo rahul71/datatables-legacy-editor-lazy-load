@@ -1,0 +1,26 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/spec",
+    "typeRoots": [
+      "node_modules/@types/*",
+      "src/typings.d.ts"
+    ],
+    "types": [
+      "jasmine",
+      "jquery",
+      "bootstrap",
+      "jquery.datatables",
+      "node",
+      "webpack-env"
+    ]
+  },
+  "files": [
+    "test.ts",
+    "polyfills.test.ts"
+  ],
+  "include": [
+    "**/*.spec.ts",
+    "**/*.d.ts"
+  ]
+}

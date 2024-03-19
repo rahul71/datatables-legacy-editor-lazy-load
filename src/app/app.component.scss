@@ -1,0 +1,8 @@
+// Imports core style variables
+@import "../style/app-variables";
+
+// styles applied on :host are applied on the current component, "app" in this case
+html,
+body {
+	height: 100%;
+}

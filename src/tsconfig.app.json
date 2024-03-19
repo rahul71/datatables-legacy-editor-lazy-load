@@ -1,0 +1,20 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "../out-tsc/app",
+		"typeRoots": [
+			"node_modules/@types/*",
+			"src/typings.d.ts"
+		],
+		"types": [
+			"jquery",
+			"bootstrap",
+			"jquery.datatables",
+			"node"
+		]
+	},
+	"include": [
+		"main.ts",
+		"polyfills.ts"
+	]
+}

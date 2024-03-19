@@ -1,0 +1,27 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+	"max-line-length":  200,
+	"property-no-vendor-prefix": null,
+	"selector-class-pattern": ["^[a-z0-9]+((-[a-z0-9]+)|([A-Z][a-z0-9]+))*$",
+	  {
+		"message": "Expected class selector to be kebab-case or camelCase"
+	  }
+	],
+	"selector-list-comma-newline-after": null,
+	"selector-pseudo-element-no-unknown": [true, {
+	  "ignorePseudoElements": ["ng-deep"]
+	}],
+	"selector-id-pattern": ["^[a-z0-9]+((-[a-z0-9]+)|([A-Z][a-z0-9]+))*$",
+	  {
+		"message": "Expected id selector to be kebab-case or camelCase"
+	  }
+	],
+	"selector-type-case": "lower",
+	"scss/dollar-variable-pattern": ["^[a-z0-9]+((-[a-z0-9]+)|([A-Z][a-z0-9]+))*$",
+	  {
+		"message": "Expected variable to be kebab-case or camelCase"
+	  }
+	]
+  }
+}
